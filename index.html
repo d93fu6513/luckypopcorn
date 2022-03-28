@@ -26,15 +26,15 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
               <img src="images/logo.png" alt="" srcset="">
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav me-auto">
               <li class="nav-item">
                 <a class="nav-link" href="#">首頁</a>
@@ -61,11 +61,20 @@
             <div class="d-flex justify-content-center">
                 <div class="text-center">
                     <h1 class="mx-auto my-0 ">好運爆米花</h1>
-                    <h2 class="mx-auto mt-2 mb-5">好運爆米花 好運包你發</h2>
+                    <h2 class="mx-auto mt-2 mb-5">好運包你發</h2>
                     <a class="btn btn-outline-light" href="#about">找好運</a>
                 </div>
             </div>
         </div>
     </header>
+    <div class="banner">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="images/banner1.png" alt="" width="100%"></div>
+              <div class="swiper-slide"><img src="images/banner2.png" alt="" width="100%""></div>
+              <div class="swiper-slide"><img src="images/banner3.png" alt="" width="100%""></div>
+            </div>
+            <div class="swiper-pagination"></div>
+    </div>
 </body>
 </html>
