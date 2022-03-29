@@ -49,9 +49,92 @@ table {
 /*reset end*/
 #offcanvasNavbar .navbar-nav li > a, #offcanvasNavbar .navbar-nav li > a {
 	border-bottom:3px solid transparent;
-	font-size: 18px;
+	font-size: 22px;
   }
 #offcanvasNavbar .navbar-nav li > a:hover, #offcanvasNavbar .navbar-nav li > a:focus {
 	color: #ffffff;
 	border-bottom:3px solid #D6699A;
   }
+@media (max-width: 576px) {
+	.text-sm-center {
+		text-align: center;
+	}
+}
+h2.text-luckypopcorn {
+	color: #3D7DF7 !important;
+	font-size: 30px;
+    text-align: center;
+	font-weight: bold;
+} 
+h2.text-luckypopcorn span {
+	display: block;
+	position: relative;
+}
+h2.text-luckypopcorn span:before,
+h2.text-luckypopcorn span:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	background: #3D7DF7;
+	width: 10%;
+	height: 2px;
+}
+h2.text-luckypopcorn span:before {
+	left: 30%;
+}
+h2.text-luckypopcorn span:after {
+	right: 30%;
+} 
+@media (max-width: 1400px) {
+	h2.text-luckypopcorn span:before {
+		left: 29%;
+	}
+	h2.text-luckypopcorn span:after {
+		right: 29%;
+	}
+} @media (max-width: 1200px) {
+	h2.text-luckypopcorn span:before {
+		left: 28%;
+	}
+	h2.text-luckypopcorn span:after {
+		right: 28%;
+	}
+} 
+@media (max-width: 992px) {
+	h2.text-luckypopcorn span:before {
+		left: 27%;
+	}
+	h2.text-luckypopcorn span:after {
+		right: 27%;
+	}
+} 
+@media (max-width: 768px) {
+	h2.text-luckypopcorn span:before {
+		left: 26%;
+	}
+	h2.text-luckypopcorn span:after {
+		right: 26%;
+	}
+} 
+@media (max-width: 576px) {
+	h2.text-luckypopcorn span:before {
+		left: 25%;
+	}
+	h2.text-luckypopcorn span:after {
+		right: 25%;
+	}
+}
+h5.card-title{
+	color: #3D7DF7;
+	font-size: 22px;
+	font-weight: bold;
+}
+p.card-text {
+	color: #616161;
+	font-size: 18px;
+}
+p.text-muted {
+	color: #b1b1b1;
+	font-size: 14px;
+	text-align: right;
+}
