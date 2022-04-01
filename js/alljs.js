@@ -32,4 +32,42 @@ $(document).ready(function() {
       }, false)
     })
 })()
+
+//產品內頁BANNER
+var swiper = new Swiper(".productSwiper", {
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesProgress: true,
+});
+var swiper2 = new Swiper(".productSwiper2", {
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  thumbs: {
+    swiper: swiper,
+  },
+});
+
+var num_jia = document.getElementById("num-jia");
+var num_jian = document.getElementById("num-jian");
+var input_num = document.getElementById("input-num");
+
+num_jia.onclick = function() {
+
+    input_num.value = parseInt(input_num.value) + 1;
+}
+
+num_jian.onclick = function() {
+
+    if(input_num.value <= 0) {
+        input_num.value = 0;
+    } else {
+
+        input_num.value = parseInt(input_num.value) - 1;
+    }
+
+}
 });
