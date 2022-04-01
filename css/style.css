@@ -57,7 +57,6 @@ body {
   }
 #offcanvasNavbar .navbar-nav li > a:hover, #offcanvasNavbar .navbar-nav li > a:focus {
 	color: #ffffff;
-	border-bottom:3px solid #D6699A;
   }
 @media (max-width: 576px) {
 	.text-sm-center {
@@ -172,4 +171,30 @@ p.card-price {
 .btn:hover {
     background-color: #3D7DF7;
     color: #fff;
+}
+h3.card-title {
+	color: #3D7DF7;
+	font-size: 20px;
+	font-weight: bold;
+}
+h2.footer-text,
+  .footer-link {
+	color: white;
+}
+.modal-title {
+	color: white;
+}
+#loginModal .btn {
+	color: #3D7DF7;
+	border: 1px solid #3D7DF7;
+}#loginModal .btn:hover {
+	background-color: #3D7DF7;
+	color: #ffffff;
+}
+#registerModal .btn {
+	color: #D56999;
+	border: 1px solid #D56999;
+}#registerModal .btn:hover {
+	background-color: #D56999;
+	color: #ffffff;
 }

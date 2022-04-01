@@ -14,12 +14,15 @@
         <meta property="og:image" content="FB的圖片" />
         <link href="圖片路徑" rel="apple-touch-icon" />
         <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
         <link rel="stylesheet" href="css/style.css">
+
         <script src="https://kit.fontawesome.com/559083451c.js" crossorigin="anonymous"></script>
         <script src="js/jquery-3.6.0.min.js"></script>
         <script src="js/alljs.js"></script>
@@ -54,13 +57,13 @@
               <a class="nav-link" href="#">好運產品</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">好運據點</a>
+              <a class="nav-link" href="#">關於好運</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fa-brands fa-facebook-square"></i></a>
+              <a class="nav-link" data-bs-toggle="modal" data-bs-target="#loginModal" href="#"><i class="fa-solid fa-user"></i></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
             </li>
           </ul>
         </div>
@@ -80,7 +83,7 @@
   </div>
   <section class="pt-5">
     <div class="container">
-      <h2 class="text-luckypopcorn"><span>好運消息</span></h2>
+      <h2 class="text-luckypopcorn" id="news"><span>好運消息</span></h2>
       <div class="row row-cols-1 row-cols-lg-2 g-4 pt-5">
         <div class="col">
           <div class="box-shadow">
@@ -435,14 +438,146 @@
   </section>
   <section class="pt-5">
     <div class="container">
-      <h2 class="text-luckypopcorn"><span>好運據點</span></h2>
+      <h2 class="text-luckypopcorn"><span>關於好運</span></h2>
       <div class="row row-cols-1 row-cols-lg-2 g-4 pt-5">
         <div class="col">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.958517503417!2d121.61067421563246!3d25.001525483987674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abd4c8aeb65b%3A0x5dd0ea45ce3735ab!2z5aW96YGL54iG57Gz6Iqx!5e0!3m2!1szh-TW!2stw!4v1648752522366!5m2!1szh-TW!2stw" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.958517503417!2d121.61067421563246!3d25.001525483987674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abd4c8aeb65b%3A0x5dd0ea45ce3735ab!2z5aW96YGL54iG57Gz6Iqx!5e0!3m2!1szh-TW!2stw!4v1648752522366!5m2!1szh-TW!2stw" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <div class="col">2</div>
+        <div class="col">
+          <div class="row">
+            <div class="col-4 d-flex flex-column align-items-center">
+              <img src="images/corn.png" width="70%" alt="">
+              <h3 class="card-title">非基因改玉米</h3>
+            </div>
+            <div class="col-4 d-flex flex-column align-items-center">
+              <img src="images/oil.png" width="70%" alt="">
+              <h3 class="card-title">爆米花專用油</h3>
+            </div>
+            <div class="col-4 d-flex flex-column align-items-center">
+              <img src="images/sugar.png" width="70%" alt="">
+              <h3 class="card-title">美國進口焦糖</h3>
+            </div>
+            <div class="col-4 d-flex flex-column align-items-center">
+              <img src="images/freight.png" width="70%" alt="">
+              <h3 class="card-title">7-11店到店</h3>
+            </div>
+            <div class="col-4 d-flex flex-column align-items-center">
+              <img src="images/veggie.png" width="70%" alt="">
+              <h3 class="card-title">素食可吃</h3>
+            </div>
+            <div class="col-4 d-flex flex-column align-items-center">
+              <img src="images/wa.png" width="70%" alt="">
+              <h3 class="card-title">好運發發發</h3>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
+  <section class="pt-5">
+  <footer class="py-3" style="background-color: #3D7DF7;">
+    <div class="container d-flex justify-content-between align-items-center">
+        <h2 class="footer-text">好運爆米花股份有限公司</h2>
+        <div class="d-flex">
+          <a class="footer-link pe-2" href="https://www.facebook.com/luckypopcorn"><i class="fa-brands fa-facebook-square"></i></a>
+          <a class="footer-link" href="https://www.instagram.com/luckypopcorn/"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </div>
+  </footer>
+  </section>
+<!-- LoginModal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: #3D7DF7;">
+        <h5 class="modal-title" id="exampleModalLabel">登入</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-12">
+            <form action="" class="row g-3 needs-validation" novalidate>
+              <div class="col-12">
+                <label for="inputemail" class="form-label">帳號</label>
+                <input type="email" class="form-control" id="email" required>
+                <div class="invalid-feedback">
+                  您必須先輸入帳號
+                </div>
+              </div>
+              <div class="col-12">
+                <label for="inputepassword" class="form-label">密碼</label>
+                <input type="password" class="form-control" id="password" required>
+                <div class="invalid-feedback">
+                  您必須先輸入密碼
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#" class="me-auto" data-bs-toggle="modal" data-bs-target="#registerModal" data-dismiss="modal">還沒加入會員</a>
+                <button type="button" class="btn" data-bs-dismiss="modal">取消</button>
+                <button type="submit" class="btn">送出</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- RegisterModal -->
+<div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: #D56999;">
+        <h5 class="modal-title" id="exampleModalLabel">註冊</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col">            
+            <form action="" class="row g-3 needs-validation" novalidate>
+              <div class="col-12">
+                <label for="inputemail" class="form-label">帳號</label>
+                <input type="email" class="form-control" id="email" required>
+                <div class="invalid-feedback">
+                  您必須先輸入帳號
+                </div>
+              </div>
+              <div class="col-12">
+                <label for="inputepassword" class="form-label">密碼</label>
+                <input type="password" class="form-control" id="password" required>
+                <div class="invalid-feedback">
+                  您必須先輸入密碼
+                </div>
+              </div>
+              <div class="col-12">
+                <label for="inputephone" class="form-label">電話</label>
+                <input type="phone" class="form-control" id="phone" required>
+                <div class="invalid-feedback">
+                  您必須先輸入電話
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                  <label class="form-check-label" for="invalidCheck">
+                    同意加入會員
+                  </label>
+                  <div class="invalid-feedback">
+                    您必須先同意加入會員
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="https://www.facebook.com/luckypopcorn" target="_blank" class="me-auto" data-dismiss="modal">閱讀會員協議</a>
+                <button type="button" class="btn" data-bs-dismiss="modal">取消</button>
+                <button type="submit" class="btn">送出</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>

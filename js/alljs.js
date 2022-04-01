@@ -3,7 +3,7 @@ $(document).ready(function() {
     var swiper = new Swiper(".mySwiper", {
         spaceBetween: 30,
         autoplay: {
-            delay: 2000,
+            delay: 3000,
         },
         effect: 'slide',
         pagination: {
@@ -11,45 +11,25 @@ $(document).ready(function() {
           clickable: true,
         },
       });
-// Navbar shrink function
-var navbarShrink = function () {
-  const navbarCollapsible = document.body.querySelector('#mainNav');
-  if (!navbarCollapsible) {
-      return;
-  }
-  if (window.scrollY === 0) {
-      navbarCollapsible.classList.remove('navbar-shrink')
-  } else {
-      navbarCollapsible.classList.add('navbar-shrink')
-  }
 
-};
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict'
 
-// Shrink the navbar 
-navbarShrink();
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
 
-// Shrink the navbar when page is scrolled
-document.addEventListener('scroll', navbarShrink);
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
 
-// Activate Bootstrap scrollspy on the main nav element
-const mainNav = document.body.querySelector('#mainNav');
-if (mainNav) {
-  new bootstrap.ScrollSpy(document.body, {
-      target: '#mainNav',
-      offset: 74,
-  });
-};
-
-// Collapse responsive navbar when toggler is visible
-const navbarToggler = document.body.querySelector('.navbar-toggler');
-const responsiveNavItems = [].slice.call(
-  document.querySelectorAll('#navbarResponsive .nav-link')
-);
-responsiveNavItems.map(function (responsiveNavItem) {
-  responsiveNavItem.addEventListener('click', () => {
-      if (window.getComputedStyle(navbarToggler).display !== 'none') {
-          navbarToggler.click();
-      }
-  });
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
 });
-  });
