@@ -70,4 +70,33 @@ num_jian.onclick = function() {
     }
 
 }
+//產品內頁 容量-價格
+var area = document.getElementById('size');
+var list = document.querySelector('.product-price');
+
+var product = [
+    {
+        price: '$70',
+        size: '袋裝(70oz)'
+    },
+    {
+        price: '$120',
+        size: '桶裝(120oz)'
+    }
+]
+var len = product.length;
+
+function updateList(e){
+    var select = e.target.value;
+    var str='';
+    for(var i=0;len>i;i++){
+        if(select== product[i].size){
+            str += product[i].price
+        }
+    }
+    list.innerHTML = str;
+}
+
+area.addEventListener('change',updateList,false)
+
 });
