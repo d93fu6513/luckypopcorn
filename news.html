@@ -186,5 +186,99 @@
           </div>
         </footer>
         </section>
+<!-- LoginModal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: #3D7DF7;">
+        <h5 class="modal-title" id="exampleModalLabel">登入</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-12">
+            <form action="" class="row g-3 needs-validation" novalidate>
+              <div class="col-12">
+                <label for="inputemail" class="form-label">帳號</label>
+                <input type="email" class="form-control" id="email" required>
+                <div class="invalid-feedback">
+                  您必須先輸入帳號
+                </div>
+              </div>
+              <div class="col-12">
+                <label for="inputepassword" class="form-label">密碼</label>
+                <input type="password" class="form-control" id="password" required>
+                <div class="invalid-feedback">
+                  您必須先輸入密碼
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#" class="me-auto" data-bs-toggle="modal" data-bs-target="#registerModal" data-dismiss="modal">還沒加入會員</a>
+                <button type="button" class="btn" data-bs-dismiss="modal">取消</button>
+                <button type="submit" class="btn">送出</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- RegisterModal -->
+<div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: #D56999;">
+        <h5 class="modal-title" id="exampleModalLabel">註冊</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col">            
+            <form action="" class="row g-3 needs-validation" novalidate>
+              <div class="col-12">
+                <label for="inputemail" class="form-label">帳號</label>
+                <input type="email" class="form-control" id="email" required>
+                <div class="invalid-feedback">
+                  您必須先輸入帳號
+                </div>
+              </div>
+              <div class="col-12">
+                <label for="inputepassword" class="form-label">密碼</label>
+                <input type="password" class="form-control" id="password" required>
+                <div class="invalid-feedback">
+                  您必須先輸入密碼
+                </div>
+              </div>
+              <div class="col-12">
+                <label for="inputephone" class="form-label">電話</label>
+                <input type="phone" class="form-control" id="phone" required>
+                <div class="invalid-feedback">
+                  您必須先輸入電話
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                  <label class="form-check-label" for="invalidCheck">
+                    同意加入會員
+                  </label>
+                  <div class="invalid-feedback">
+                    您必須先同意加入會員
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="https://www.facebook.com/luckypopcorn" target="_blank" class="me-auto" data-dismiss="modal">閱讀會員協議</a>
+                <button type="button" class="btn" data-bs-dismiss="modal">取消</button>
+                <button type="submit" class="btn">送出</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>
