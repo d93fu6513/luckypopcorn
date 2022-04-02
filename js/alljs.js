@@ -51,16 +51,17 @@ var swiper2 = new Swiper(".productSwiper2", {
   },
 });
 
-var num_jia = document.getElementById("num-jia");
-var num_jian = document.getElementById("num-jian");
+//產品內頁 數量增減
+var numplus = document.getElementById("numplus");
+var numminus = document.getElementById("numminus");
 var input_num = document.getElementById("input-num");
 
-num_jia.onclick = function() {
+numplus.onclick = function() {
 
     input_num.value = parseInt(input_num.value) + 1;
 }
 
-num_jian.onclick = function() {
+numminus.onclick = function() {
 
     if(input_num.value <= 0) {
         input_num.value = 0;
