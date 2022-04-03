@@ -1,0 +1,147 @@
+body {
+    font-family: $font-family-ch;
+    line-height: 24px;
+}
+.navbar-brand h1 {
+    background-image: url(../images/logo.png);
+    width: 275px;
+    height: 50px;
+    @include hide-text;
+}
+#offcanvasNavbar .navbar-nav {
+    font-size: $font-s;
+    a {
+        color: rgba(255, 255, 255, 0.5);
+        &:hover {
+            color: rgb(255, 255, 255);
+        }
+    }
+}
+.dropdown-menu {
+	background-color: rgba(255, 255, 255, 0.849);
+    .table {
+        font-size: $font-s;
+        color: $brand-color;
+        white-space: nowrap;
+    }
+        .totalprice {
+            font-size: $font-s;
+            color: $price-color;
+        }
+}
+
+.btn {
+    border: 1px solid $brand-color;
+    color: $brand-color !important;
+	border-radius: 5%;
+    &:hover {
+        background-color: $brand-color;;
+        color: white !important;;
+    }
+}
+.text-luckypopcorn {
+    color: $brand-color;
+    font-size: $font-xl;
+    text-align: center;
+    font-weight: bold;
+    span {
+        display: block;
+	    position: relative;
+        &:before,&:after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            background: $brand-color;
+            width: 10%;
+            height: 2px;
+        }
+    }
+}
+.text-luckypopcorn span:before {
+    left: 30%;
+    @include mobile {
+        display: none
+    };
+    @include pad {
+        left: 20%;
+    };
+}
+.text-luckypopcorn span:after {
+    right: 30%;
+    @include mobile {
+        display: none
+    };
+    @include pad {
+        right: 20%;
+    };
+}
+.box-shadow {
+	box-shadow: 0 0 5px rgb(148, 148, 148);
+	border-radius: 1%;
+    &:hover {
+        box-shadow: 0 0 10px rgb(148, 148, 148);
+        border-radius: 1%;
+    }
+}
+.title {
+    color: $brand-color;
+    font-size: $font-m;
+    font-weight: bold;
+}
+.price {
+    color: $price-color;
+    font-size: $font-m;
+    font-weight: bold;
+}
+.date {
+    color: $date-color;
+    padding: 5px 0;
+}
+.text {
+    color: $text-color;
+    text-decoration: none;
+}
+.modal-title {
+    color: white;
+}
+#registerModal .btn {
+	color: $price-color!important; 
+	border: 1px solid $price-color;
+    &:hover {
+	    background-color: $price-color;
+	    color: white!important;
+    }
+}
+.footer-text,.footer-link {
+	color: white;
+    font-size: $font-s;
+}
+
+.input-group{
+	border: 1px solid #dadada;
+    border-radius: 5%;
+    .btn{
+	border: 0px solid;
+	color: #616161!important;
+        &:hover {
+	    background-color: transparent;
+	    color: $brand-color!important;
+        }
+    }
+}
+.input-group .form-control{
+	border: 0px solid #616161;
+}
+.product-line span {
+	display: block;
+	position: relative;
+}
+.product-line span:before,
+.product-line span:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	background: #dadada;
+	width: 100%;
+	height: 1px;
+}

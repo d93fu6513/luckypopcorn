@@ -66,6 +66,13 @@ body {
 #offcanvasNavbar .navbar-nav li > a:hover, #offcanvasNavbar .navbar-nav li > a:focus {
 	color: #ffffff;
   }
+.dropdown-menu {
+	background-color: rgba(255, 255, 255, 0.849);
+}
+.table td {
+	font-size: 16px;
+	white-space: nowrap;
+}
 @media (max-width: 576px) {
 	.text-sm-center {
 		text-align: center;
@@ -207,26 +214,7 @@ h2.footer-text,
 	background-color: #D56999;
 	color: #ffffff;
 }
-/* 產品內頁 */
-.productSwiper {
-    height: 20%;
-    box-sizing: border-box;
-    padding: 5px 0;
-}
-.productSwiper .swiper-slide {
-    width: 25%;
-    height: 100%;
-    opacity: 0.4;
-}
-.productSwiper .swiper-slide-thumb-active {
-    opacity: 1;
-}
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+
 .product-title {
 	color: #3D7DF7;
 	font-size: 30px;

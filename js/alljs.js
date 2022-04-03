@@ -73,7 +73,7 @@ numminus.onclick = function() {
 }
 //產品內頁 容量-價格
 var area = document.getElementById('size');
-var list = document.querySelector('.product-price');
+var list = document.querySelector('.price');
 
 var product = [
     {
