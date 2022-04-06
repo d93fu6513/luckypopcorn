@@ -16,12 +16,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
         
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Noto+Sans+TC:wght@300&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />        
         <link rel="stylesheet" href="sass/all.css">
 
@@ -68,28 +68,26 @@
             </li>
             <li class="nav-item dropdown position-relative">
               <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-              <span class="position-absolute top-0 badge rounded-pill bg-danger">5</span>
-                <div class="dropdown-menu px-4 py-3">
-                  <table class="table border-bottom">
+              <span class="position-absolute top-0 badge rounded-pill bg-danger">2</span>
+                <div class="dropdown-menu dropdown-menu-end px-4 py-3">
+                  <table class="table border-bottom border-top">
+                    <h5 class="title pb-2">購物車內容</h5>
                     <tbody>
-                      <tr>
-                        <td colspan="4">購物車內容</td>
-                      </tr>
-                      <tr>
-                        <td><i class="fa-solid fa-trash"></i></th>
-                        <td>袋裝經典焦糖</td>
-                        <td>1</td>
-                        <td class="price">$70</td>
-                      </tr>
-                      <tr>
-                        <td><i class="fa-solid fa-trash"></i></th>
-                        <td>桶裝椒麻香辣</td>
-                        <td>1</td>
-                        <td class="price">$120</td>
-                      </tr>
-                    </tbody>
+                        <tr>
+                          <td><i class="bi bi-trash"></i></th>
+                          <td>袋裝經典焦糖</td>
+                          <td>1</td>
+                          <td class="totalprice text-end">$70</td>
+                        </tr>
+                        <tr>
+                          <td><i class="bi bi-trash"></i></th>
+                          <td>桶裝椒麻香辣</td>
+                          <td>1</td>
+                          <td class="totalprice text-end">$120</td>
+                        </tr>
+                      </tbody>
                   </table>
-                    <a class="btn d-block" href="#"><i class="fa-solid fa-cart-plus pe-2"></i>結帳</a>
+                    <a class="btn d-block" href="./cart.html"><i class="fa-solid fa-cart-plus pe-2"></i>結帳</a>
                 </div>
             </li>
           </ul>
@@ -115,11 +113,11 @@
           <div class="card h-100">
             <img src="images/news4.png" class="card-img-top" alt="...">
             <div class="card-body d-flex flex-column">
-              <h5 class="title">『全新上市，露營系爆米花』IG抽獎</h5>
+              <h5 class="title">『全新上市，露營系爆米花』IGevent</h5>
               <p class="date">2022/04/02</p>
               <p class="text mb-auto">喜歡露營的朋友都很喜歡收集貼紙到處貼，老闆特地做了露營系列貼紙送給10位好運的朋友！</p>
               <div class="d-grid gap-2 d-md-block pt-3">
-                <a class="btn" href="./news_IG抽獎.html">閱讀全文</a>
+                <a class="btn" href="./news_IGevent.html">閱讀全文</a>
               </div>
             </div>
           </div>
@@ -132,7 +130,7 @@
               <p class="date">2022/03/26</p>
               <p class="text mb-auto">使用7-11賣貨便訂購，"不限金額"即可享有7-11店到店"免運費"！</p>
               <div class="d-grid gap-2 d-md-block pt-3">
-                <a class="btn" href="./news_IG抽獎.html">閱讀全文</a>
+                <a class="btn" href="./news_IGevent.html">閱讀全文</a>
               </div>
             </div>
           </div>
@@ -145,7 +143,7 @@
               <p class="date">2022/01/15</p>
               <p class="text mb-auto">好運爆米花現正推出試吃體驗，歡迎來好運據點試吃補好運。</p>
               <div class="d-grid gap-2 d-md-block pt-3">
-                <a class="btn" href="./news_IG抽獎.html">閱讀全文</a>
+                <a class="btn" href="./news_IGevent.html">閱讀全文</a>
               </div>
             </div>
           </div>
@@ -180,7 +178,7 @@
               <div class="col">
                 <div class="box-shadow">
                   <div class="card border-0 h-100">
-                    <a href="./product_焦點焦糖.html"><img src="images/product.png" class="card-img-top" alt="..."></a>
+                    <a href="./product_caramel.html"><img src="images/product.png" class="card-img-top" alt="..."></a>
                     <div class="card-body">
                       <div class="d-grid d-flex justify-content-between pb-3">
                         <h5 class="title">經典焦糖</h5>
@@ -196,7 +194,7 @@
               <div class="col">
                 <div class="box-shadow">
                   <div class="card border-0 h-100">
-                    <a href="./product_焦點焦糖.html"><img src="images/product.png" class="card-img-top" alt="..."></a>
+                    <a href="./product_caramel.html"><img src="images/product.png" class="card-img-top" alt="..."></a>
                     <div class="card-body">
                       <div class="d-grid d-flex justify-content-between pb-3">
                         <h5 class="title">小甜好運(7分甜)</h5>
@@ -212,7 +210,7 @@
               <div class="col">
                 <div class="box-shadow">
                   <div class="card border-0 h-100">
-                    <a href="./product_焦點焦糖.html"><img src="images/product.png" class="card-img-top" alt="..."></a>
+                    <a href="./product_caramel.html"><img src="images/product.png" class="card-img-top" alt="..."></a>
                     <div class="card-body">
                       <div class="d-grid d-flex justify-content-between pb-3">
                         <h5 class="title">玉米濃湯</h5>
@@ -228,7 +226,7 @@
               <div class="col">
                 <div class="box-shadow">
                   <div class="card border-0 h-100">
-                    <a href="./product_焦點焦糖.html"><img src="images/product.png" class="card-img-top" alt="..."></a>
+                    <a href="./product_caramel.html"><img src="images/product.png" class="card-img-top" alt="..."></a>
                     <div class="card-body">
                       <div class="d-grid d-flex justify-content-between pb-3">
                         <h5 class="title">椒麻香辣</h5>
@@ -244,7 +242,7 @@
               <div class="col">
                 <div class="box-shadow">
                   <div class="card border-0 h-100">
-                    <a href="./product_焦點焦糖.html"><img src="images/product.png" class="card-img-top" alt="..."></a>
+                    <a href="./product_caramel.html"><img src="images/product.png" class="card-img-top" alt="..."></a>
                     <div class="card-body">
                       <div class="d-grid d-flex justify-content-between pb-3">
                         <h5 class="title">可可可可</h5>
@@ -260,7 +258,7 @@
               <div class="col">
                 <div class="box-shadow">
                   <div class="card border-0 h-100">
-                    <a href="./product_焦點焦糖.html"><img src="images/product.png" class="card-img-top" alt="..."></a>
+                    <a href="./product_caramel.html"><img src="images/product.png" class="card-img-top" alt="..."></a>
                     <div class="card-body">
                       <div class="d-grid d-flex justify-content-between pb-3">
                         <h5 class="title">義式披薩</h5>
@@ -280,7 +278,7 @@
               <div class="col">
                 <div class="box-shadow">
                   <div class="card border-0 h-100">
-                    <a href="./product_焦點焦糖.html"><img src="images/product.png" class="card-img-top" alt="..."></a>
+                    <a href="./product_caramel.html"><img src="images/product.png" class="card-img-top" alt="..."></a>
                     <div class="card-body">
                       <div class="d-grid d-flex justify-content-between pb-3">
                         <h5 class="title">經典焦糖</h5>
@@ -296,7 +294,7 @@
               <div class="col">
                 <div class="box-shadow">
                   <div class="card border-0 h-100">
-                    <a href="./product_焦點焦糖.html"><img src="images/product.png" class="card-img-top" alt="..."></a>
+                    <a href="./product_caramel.html"><img src="images/product.png" class="card-img-top" alt="..."></a>
                     <div class="card-body">
                       <div class="d-grid d-flex justify-content-between pb-3">
                         <h5 class="title">小甜好運(7分甜)</h5>
@@ -312,7 +310,7 @@
               <div class="col">
                 <div class="box-shadow">
                   <div class="card border-0 h-100">
-                    <a href="./product_焦點焦糖.html"><img src="images/product.png" class="card-img-top" alt="..."></a>
+                    <a href="./product_caramel.html"><img src="images/product.png" class="card-img-top" alt="..."></a>
                     <div class="card-body">
                       <div class="d-grid d-flex justify-content-between pb-3">
                         <h5 class="title">玉米濃湯</h5>
@@ -328,7 +326,7 @@
               <div class="col">
                 <div class="box-shadow">
                   <div class="card border-0 h-100">
-                    <a href="./product_焦點焦糖.html"><img src="images/product.png" class="card-img-top" alt="..."></a>
+                    <a href="./product_caramel.html"><img src="images/product.png" class="card-img-top" alt="..."></a>
                     <div class="card-body">
                       <div class="d-grid d-flex justify-content-between pb-3">
                         <h5 class="title">椒麻香辣</h5>
@@ -344,7 +342,7 @@
               <div class="col">
                 <div class="box-shadow">
                   <div class="card border-0 h-100">
-                    <a href="./product_焦點焦糖.html"><img src="images/product.png" class="card-img-top" alt="..."></a>
+                    <a href="./product_caramel.html"><img src="images/product.png" class="card-img-top" alt="..."></a>
                     <div class="card-body">
                       <div class="d-grid d-flex justify-content-between pb-3">
                         <h5 class="title">可可可可</h5>
@@ -360,7 +358,7 @@
               <div class="col">
                 <div class="box-shadow">
                   <div class="card border-0 h-100">
-                    <a href="./product_焦點焦糖.html"><img src="images/product.png" class="card-img-top" alt="..."></a>
+                    <a href="./product_caramel.html"><img src="images/product.png" class="card-img-top" alt="..."></a>
                     <div class="card-body">
                       <div class="d-grid d-flex justify-content-between pb-3">
                         <h5 class="title">義式披薩</h5>
@@ -380,7 +378,7 @@
               <div class="col">
                 <div class="box-shadow">
                   <div class="card border-0 h-100">
-                    <a href="./product_焦點焦糖.html"><img src="images/product6.png" class="card-img-top" alt="..."></a>
+                    <a href="./product_caramel.html"><img src="images/product6.png" class="card-img-top" alt="..."></a>
                     <div class="card-body">
                       <div class="d-grid d-flex justify-content-between pb-3">
                         <h5 class="title">好運書包</h5>
@@ -396,7 +394,7 @@
               <div class="col">
                 <div class="box-shadow">
                   <div class="card border-0 h-100">
-                    <a href="./product_焦點焦糖.html"><img src="images/product4.png" class="card-img-top" alt="..."></a>
+                    <a href="./product_caramel.html"><img src="images/product4.png" class="card-img-top" alt="..."></a>
                     <div class="card-body">
                       <div class="d-grid d-flex justify-content-between pb-3">
                         <h5 class="title">隨手罐</h5>
@@ -416,7 +414,7 @@
               <div class="col">
                 <div class="box-shadow">
                   <div class="card border-0 h-100">
-                    <a href="./product_焦點焦糖.html"><img src="images/product7.png" class="card-img-top" alt="..."></a>
+                    <a href="./product_caramel.html"><img src="images/product7.png" class="card-img-top" alt="..."></a>
                     <div class="card-body">
                       <div class="d-grid d-flex justify-content-between pb-3">
                         <h5 class="title">好運露營杯</h5>
@@ -432,7 +430,7 @@
               <div class="col">
                 <div class="box-shadow">
                   <div class="card border-0 h-100">
-                    <a href="./product_焦點焦糖.html"><img src="images/product5.png" class="card-img-top" alt="..."></a>
+                    <a href="./product_caramel.html"><img src="images/product5.png" class="card-img-top" alt="..."></a>
                     <div class="card-body">
                       <div class="d-grid d-flex justify-content-between pb-3">
                         <h5 class="title">好運露營貼紙</h5>

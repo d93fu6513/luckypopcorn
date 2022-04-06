@@ -107,7 +107,7 @@ body {
 }
 
 .dropdown-menu {
-  background-color: rgba(255, 255, 255, 0.849);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .dropdown-menu .table {
@@ -116,7 +116,7 @@ body {
   white-space: nowrap;
 }
 
-.dropdown-menu .totalprice {
+.totalprice {
   font-size: 16px;
   color: #D56999;
 }
@@ -153,35 +153,23 @@ body {
   height: 2px;
 }
 
-.text-luckypopcorn span:before {
-  left: 30%;
-}
-
-@media (max-width: 425px) {
-  .text-luckypopcorn span:before {
-    display: none;
-  }
+h2.text-luckypopcorn span:before {
+  left: 33%;
 }
 
 @media (max-width: 768px) {
-  .text-luckypopcorn span:before {
-    left: 20%;
+  h2.text-luckypopcorn span:before {
+    left: 15%;
   }
 }
 
-.text-luckypopcorn span:after {
-  right: 30%;
-}
-
-@media (max-width: 425px) {
-  .text-luckypopcorn span:after {
-    display: none;
-  }
+h2.text-luckypopcorn span:after {
+  right: 33%;
 }
 
 @media (max-width: 768px) {
-  .text-luckypopcorn span:after {
-    right: 20%;
+  h2.text-luckypopcorn span:after {
+    right: 15%;
   }
 }
 

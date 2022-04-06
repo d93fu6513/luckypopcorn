@@ -18,7 +18,7 @@ body {
     }
 }
 .dropdown-menu {
-	background-color: rgba(255, 255, 255, 0.849);
+	background-color: rgba(255, 255, 255, 0.8);
     .table {
         font-size: $font-s;
         color: $brand-color;
@@ -57,23 +57,17 @@ body {
         }
     }
 }
-.text-luckypopcorn span:before {
-    left: 30%;
-    @include mobile {
-        display: none
-    };
-    @include pad {
-        left: 20%;
-    };
+h2.text-luckypopcorn span:before {
+    left: 33%;
+        @include pad {
+            left: 15%;
+        }
 }
-.text-luckypopcorn span:after {
-    right: 30%;
-    @include mobile {
-        display: none
-    };
-    @include pad {
-        right: 20%;
-    };
+h2.text-luckypopcorn span:after {
+    right: 33%;
+        @include pad {
+            right: 15%;
+        }
 }
 .box-shadow {
 	box-shadow: 0 0 5px rgb(148, 148, 148);
