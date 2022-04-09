@@ -1,294 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>好運產品</title>
-    <link rel="shortcut icon" href="favicon.ico">
-        <meta name="description" content="網站描述文字" />    
-        <meta property="og:title" content="FB的標題" />
-        <meta property="og:description" content="FB的描述" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="FB上的網址" />
-        <meta property="og:image" content="FB的圖片" />
-        <link href="圖片路徑" rel="apple-touch-icon" />
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-        
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Noto+Sans+TC:wght@300&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />        
-        <link rel="stylesheet" href="sass/all.css">
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-        <script src="https://kit.fontawesome.com/559083451c.js" crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-        <script src="js/jquery-3.6.0.min.js"></script>
-        <script src="js/alljs.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LuckyPopcorn</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <meta name="description" content="網站描述文字" />
+  <meta property="og:title" content="FB的標題" />
+  <meta property="og:description" content="FB的描述" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="FB上的網址" />
+  <meta property="og:image" content="FB的圖片" />
+  <link href="圖片路徑" rel="apple-touch-icon" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Noto+Sans+TC:wght@300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="sass/all.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/559083451c.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+
+
+
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #3D7DF7;">
-        <div class="container">  
-            <a class="navbar-brand" href="./index.html">
-                <h1>luckypopcorn</h1>
-            </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end text-sm-center" style="background-color: #3D7DF7;" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <a class="navbar-brand" href="./index.html">
-                <img src="images/logo.png" alt="logo">
-              </a>
-              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body justify-content-end">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link " href="./index.html">首頁</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./news.html">好運消息</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./product.html">好運產品</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./index.html#aboutlucky">關於好運</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-bs-toggle="modal" data-bs-target="#loginModal" href="#"><i class="fa-solid fa-user"></i></a>
-                </li>
-                <li class="nav-item dropdown position-relative">
-                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                  <span class="position-absolute top-0 badge rounded-pill bg-danger">2</span>
-                    <div class="dropdown-menu dropdown-menu-end px-4 py-3">
-                      <table class="table border-bottom border-top">
-                        <h5 class="title pb-2">購物車內容</h5>
-                        <tbody>
-                            <tr>
-                              <td><i class="bi bi-trash"></i></th>
-                              <td>袋裝經典焦糖</td>
-                              <td>1</td>
-                              <td class="totalprice text-end">$70</td>
-                            </tr>
-                            <tr>
-                              <td><i class="bi bi-trash"></i></th>
-                              <td>桶裝椒麻香辣</td>
-                              <td>1</td>
-                              <td class="totalprice text-end">$120</td>
-                            </tr>
-                          </tbody>
-                      </table>
-                        <a class="btn d-block" href="./cart.html"><i class="fa-solid fa-cart-plus pe-2"></i>結帳</a>
-                    </div>
-                </li>
-              </ul>
-            </div>
-          </div>
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #3D7DF7;">
+    <div class="container">
+      <a class="navbar-brand" href="./index.html">
+        <h1>luckypopcorn</h1>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-sm-center" style="background-color: #3D7DF7;" tabindex="-1"
+        id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <a class="navbar-brand" href="./index.html">
+            <img src="images/logo.png" alt="logo">
+          </a>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-    </nav>
-    <section class="pt-5">
-        <div class="container">
-            <nav style="--bs-breadcrumb-divider: '>' ;" aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="./index.html">首頁</a></li>
-                    <li class="breadcrumb-item"><a href="./product.html">好運產品</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">經典焦糖</li>
-                </ol>
-            </nav>
-        </div>
-    </section>
-    <section>
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-md-3 pb-3">
-                    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper productSwiper2">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                          <img src="images/product.png" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="images/product2.png" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="images/product3.png" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="images/product_caramel.png" />
-                        </div>                        
-                      </div>
-                      <div class="swiper-button-next"></div>
-                      <div class="swiper-button-prev"></div>
-                    </div>
-                    <div thumbsSlider="" class="swiper productSwiper">
-                      <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                          <img src="images/product.png" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="images/product2.png" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="images/product3.png" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="images/product_caramel.png" />
-                        </div>                        
-                      </div>
-                    </div>
-                </div>
-                <div class="col-md-9">
-                    <h5 class="title">經典焦糖Classic Caramel</h5>
-                    <div class="text py-3">採用美國進口焦糖，琥珀色的光芒，香醇唰嘴的口感，讓您一口接一口停不下來。</div>
-                    <div class="price"></div>
-                    <div class="row pt-3 g-4">
-                        <div class="col-md-1 product-size">容量</div>
-                        <div class="col-md-3">
-                            <select class="form-select" aria-label="Default select example" id="size">
-                                <option selected>請選擇容量</option>
-                                <option value="袋裝(70oz)">袋裝(70oz)</option>
-                                <option value="桶裝(120oz)">桶裝(120oz)</option>
-                              </select>
-                        </div>
-                        <div class="col-8"></div>
-                    </div>
-                    <div class="row pt-3 g-4">
-                        <div class="col-md-1 product-size">數量</div>
-                        <div class="col-md-3">
-                            <div class="input-group">
-                                <button class="btn" type="button" id="numminus">-</button>                                
-                                <input type="text" class="form-control text-center" id="input-num" value="0" aria-label="Example text with two button addons">
-                                <button class="btn" type="button" id="numplus">+</button>
-                            </div>   
-                        </div>
-                        <div class="col-md-8">
-                            <a class="btn" href="#"><i class="fa-solid fa-cart-plus pe-2"></i>購物車</a>
-                        </div>
-                    </div>                  
-                </div>
-                <div class="product-line">
-                    <span></span>
-                </div>
-            </div>
-        </div>    
-    </section>
-    <section class="pt-4">
-        <div class="container">
-            <div class="row">
-                <img src="images/product-intro.jpg" alt="">
-            </div>            
-        </div>
-    </section>
-    <section class="pt-5">
-        <footer class="py-3" style="background-color: #3D7DF7;">
-          <div class="container d-flex justify-content-between align-items-center">
-              <h2 class="footer-text">好運爆米花股份有限公司</h2>
-              <div class="d-flex">
-                <a class="footer-link pe-2" href="https://www.facebook.com/luckypopcorn"><i class="fa-brands fa-facebook-square"></i></a>
-                <a class="footer-link" href="https://www.instagram.com/luckypopcorn/"><i class="fa-brands fa-instagram"></i></a>
+        <div class="offcanvas-body justify-content-end">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link " href="./index.html">首頁</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./news.html">好運消息</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./product.html">好運產品</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html#aboutlucky">關於好運</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="modal" data-bs-target="#loginModal" href="#"><i
+                  class="fa-solid fa-user"></i></a>
+            </li>
+            <li class="nav-item dropdown position-relative">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"><i
+                  class="fa-solid fa-cart-shopping"></i></a>
+              <span class="position-absolute top-0 badge rounded-pill bg-danger">2</span>
+              <div class="dropdown-menu dropdown-menu-end px-4 py-3">
+                <table class="table border-bottom border-top">
+                  <h5 class="title pb-2">購物車內容</h5>
+                  <tbody>
+                    <tr>
+                      <td><span type="button" class="remove"><i class="bi bi-trash"></i></span></td>
+                      <td>袋裝經典焦糖</td>
+                      <td>1</td>
+                      <td class="totalprice text-end">$70</td>
+                    </tr>
+                    <tr>
+                      <td><span type="button" class="remove"><i class="bi bi-trash"></i></span></td>
+                      <td>桶裝椒麻香辣</td>
+                      <td>1</td>
+                      <td class="totalprice text-end">$120</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <a class="btn d-block" href="./cart.html"><i class="fa-solid fa-cart-plus pe-2"></i>結帳</a>
               </div>
-          </div>
-        </footer>
-        </section>
-<!-- LoginModal -->
-<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header" style="background-color: #3D7DF7;">
-        <h5 class="modal-title" id="exampleModalLabel">登入</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div class="row">
-          <div class="col-12">
-            <form action="" class="row g-3 needs-validation" novalidate>
-              <div class="col-12">
-                <label for="inputemail" class="form-label">帳號</label>
-                <input type="email" class="form-control" id="email" required>
-                <div class="invalid-feedback">
-                  您必須先輸入帳號
-                </div>
-              </div>
-              <div class="col-12">
-                <label for="inputepassword" class="form-label">密碼</label>
-                <input type="password" class="form-control" id="password" required>
-                <div class="invalid-feedback">
-                  您必須先輸入密碼
-                </div>
-              </div>
-              <div class="modal-footer">
-                <a href="#" class="me-auto" data-bs-toggle="modal" data-bs-target="#registerModal" data-dismiss="modal">還沒加入會員</a>
-                <button type="button" class="btn" data-bs-dismiss="modal">取消</button>
-                <button type="submit" class="btn">送出</button>
-              </div>
-            </form>
-          </div>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-  </div>
-</div>
-<!-- RegisterModal -->
-<div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header" style="background-color: #D56999;">
-        <h5 class="modal-title" id="exampleModalLabel">註冊</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  </nav>
+  <section class="pt-5">
+    <div class="container">
+      <nav style="--bs-breadcrumb-divider: '>' ;" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="./index.html">首頁</a></li>
+          <li class="breadcrumb-item"><a href="./product.html">好運產品</a></li>
+          <li class="breadcrumb-item active" aria-current="page">經典焦糖</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-3 pb-3">
+          <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper productSwiper2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="images/product.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/product2.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/product3.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/product_caramel.png" />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <div thumbsSlider="" class="swiper productSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="images/product.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/product2.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/product3.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/product_caramel.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <h5 class="title">經典焦糖Classic Caramel</h5>
+          <div class="text py-3">採用美國進口焦糖，琥珀色的光芒，香醇唰嘴的口感，讓您一口接一口停不下來。</div>
+          <div class="price"></div>
+          <div class="row pt-3 g-4">
+            <div class="col-md-1 product-size">容量</div>
+            <div class="col-md-3">
+              <select class="form-select" aria-label="Default select example" id="size">
+                <option selected>請選擇容量</option>
+                <option value="袋裝(70oz)">袋裝(70oz)</option>
+                <option value="桶裝(120oz)">桶裝(120oz)</option>
+              </select>
+            </div>
+            <div class="col-8"></div>
+          </div>
+          <div class="row pt-3 g-4">
+            <div class="col-md-1 product-size">數量</div>
+            <div class="col-md-3">
+              <div class="input-group">
+                <button class="btn" type="button" id="numminus">-</button>
+                <input type="text" class="form-control text-center" id="input-num" value="0"
+                  aria-label="Example text with two button addons">
+                <button class="btn" type="button" id="numplus">+</button>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <a class="btn" href="#"><i class="fa-solid fa-cart-plus pe-2"></i>購物車</a>
+            </div>
+          </div>
+        </div>
+        <div class="product-line">
+          <span></span>
+        </div>
       </div>
-      <div class="modal-body">
-        <div class="row">
-          <div class="col">            
-            <form action="" class="row g-3 needs-validation" novalidate>
-              <div class="col-12">
-                <label for="inputemail" class="form-label">帳號</label>
-                <input type="email" class="form-control" id="email" required>
-                <div class="invalid-feedback">
-                  您必須先輸入帳號
-                </div>
-              </div>
-              <div class="col-12">
-                <label for="inputepassword" class="form-label">密碼</label>
-                <input type="password" class="form-control" id="password" required>
-                <div class="invalid-feedback">
-                  您必須先輸入密碼
-                </div>
-              </div>
-              <div class="col-12">
-                <label for="inputephone" class="form-label">電話</label>
-                <input type="phone" class="form-control" id="phone" required>
-                <div class="invalid-feedback">
-                  您必須先輸入電話
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                  <label class="form-check-label" for="invalidCheck">
-                    同意加入會員
-                  </label>
+    </div>
+  </section>
+  <section class="pt-4">
+    <div class="container">
+      <div class="row">
+        <img src="images/product-intro.jpg" alt="">
+      </div>
+    </div>
+  </section>
+  <section class="pt-5">
+    <footer class="py-3" style="background-color: #3D7DF7;">
+      <div class="container d-flex justify-content-between align-items-center">
+        <h2 class="footer-text">好運爆米花股份有限公司</h2>
+        <div class="d-flex">
+          <a class="footer-link pe-2" href="https://www.facebook.com/luckypopcorn"><i
+              class="fa-brands fa-facebook-square"></i></a>
+          <a class="footer-link" href="https://www.instagram.com/luckypopcorn/"><i
+              class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <!-- LoginModal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: #3D7DF7;">
+          <h5 class="modal-title" id="exampleModalLabel">登入</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-12">
+              <form action="" class="row g-3 needs-validation" novalidate>
+                <div class="col-12">
+                  <label for="inputemail" class="form-label">帳號</label>
+                  <input type="email" class="form-control" id="email" required>
                   <div class="invalid-feedback">
-                    您必須先同意加入會員
+                    您必須先輸入帳號
                   </div>
                 </div>
-              </div>
-              <div class="modal-footer">
-                <a href="https://www.facebook.com/luckypopcorn" target="_blank" class="me-auto" data-dismiss="modal">閱讀會員協議</a>
-                <button type="button" class="btn" data-bs-dismiss="modal">取消</button>
-                <button type="submit" class="btn">送出</button>
-              </div>
-            </form>
+                <div class="col-12">
+                  <label for="inputepassword" class="form-label">密碼</label>
+                  <input type="password" class="form-control" id="password" required>
+                  <div class="invalid-feedback">
+                    您必須先輸入密碼
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <a href="#" class="me-auto" data-bs-toggle="modal" data-bs-target="#registerModal"
+                    data-dismiss="modal">還沒加入會員</a>
+                  <button type="button" class="btn" data-bs-dismiss="modal">取消</button>
+                  <button type="submit" class="btn">送出</button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+  <!-- RegisterModal -->
+  <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: #D56999;">
+          <h5 class="modal-title" id="exampleModalLabel">註冊</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col">
+              <form action="" class="row g-3 needs-validation" novalidate>
+                <div class="col-12">
+                  <label for="inputemail" class="form-label">帳號</label>
+                  <input type="email" class="form-control" id="email" required>
+                  <div class="invalid-feedback">
+                    您必須先輸入帳號
+                  </div>
+                </div>
+                <div class="col-12">
+                  <label for="inputepassword" class="form-label">密碼</label>
+                  <input type="password" class="form-control" id="password" required>
+                  <div class="invalid-feedback">
+                    您必須先輸入密碼
+                  </div>
+                </div>
+                <div class="col-12">
+                  <label for="inputephone" class="form-label">電話</label>
+                  <input type="phone" class="form-control" id="phone" required>
+                  <div class="invalid-feedback">
+                    您必須先輸入電話
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                      同意加入會員
+                    </label>
+                    <div class="invalid-feedback">
+                      您必須先同意加入會員
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <a href="https://www.facebook.com/luckypopcorn" target="_blank" class="me-auto"
+                    data-dismiss="modal">閱讀會員協議</a>
+                  <button type="button" class="btn" data-bs-dismiss="modal">取消</button>
+                  <button type="submit" class="btn">送出</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/alljs.js"></script>
+
 </body>
+
 </html>
