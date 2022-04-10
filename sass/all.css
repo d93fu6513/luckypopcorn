@@ -85,6 +85,30 @@ body {
   line-height: 24px;
 }
 
+.back-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  font-size: 40px;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.back-top a {
+  color: #D56999;
+}
+
+.back-top:hover {
+  opacity: 0.5;
+}
+
+.back-top.hide {
+  -webkit-transform: translateY(200%);
+          transform: translateY(200%);
+}
+
 .navbar-brand h1 {
   background-image: url(../images/logo.png);
   width: 275px;
@@ -116,7 +140,7 @@ body {
   white-space: nowrap;
 }
 
-.totalprice {
+.dropdown-menu .totalprice {
   font-size: 16px;
   color: #D56999;
 }
@@ -221,7 +245,8 @@ h2.text-luckypopcorn span:after {
   color: white !important;
 }
 
-.footer-text, .footer-link {
+.footer-text,
+.footer-link {
   color: white;
   font-size: 16px;
 }

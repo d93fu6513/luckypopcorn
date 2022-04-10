@@ -3,6 +3,26 @@ body {
     line-height: 24px;
 }
 
+.back-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-size: $font-xl;
+    transform: translateY(0%);
+    transition: 0.5s;
+    a {
+        color: $price-color;
+    }
+}
+
+.back-top:hover {
+    opacity: 0.5;
+}
+
+.back-top.hide {
+    transform: translateY(200%);
+}
+
 .navbar-brand h1 {
     background-image: url(../images/logo.png);
     width: 275px;
