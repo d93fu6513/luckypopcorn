@@ -256,14 +256,9 @@ h2.text-luckypopcorn span:after {
   border-radius: 5%;
 }
 
-.input-group .btn {
+.input-group .btn-numminus, .input-group .btn-numplus {
   border: 0px solid;
-  color: #616161 !important;
-}
-
-.input-group .btn:hover {
   background-color: transparent;
-  color: #3D7DF7 !important;
 }
 
 .input-group .form-control {
